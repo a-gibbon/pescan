@@ -13,15 +13,15 @@ try:
     import pefile
 except ImportError:
     exit(
-		"pefile is not installed. Try 'pip install pefile' or see "
-		"http://code.google.com/p/pefile/")
+        "pefile is not installed. Try 'pip install pefile' or see "
+        "http://code.google.com/p/pefile/")
 
 try:
     import magic
 except ImportError:
     print(
-		"python-magic is not installed (filetypes will not be available). "
-		"Try 'pip install python-magic'")
+        "python-magic is not installed (filetypes will not be available). "
+        "Try 'pip install python-magic'")
 
 
 def identify_filetype(name=None, data=None, mime=False):
